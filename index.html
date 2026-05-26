@@ -97,7 +97,7 @@ section{padding:72px 0}
 .doc-btn svg{width:15px;height:15px;fill:currentColor;flex-shrink:0}
 .ven-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:24px;margin-top:32px}
 .ven-card{border-radius:14px;overflow:hidden;box-shadow:0 4px 16px rgba(26,58,107,.1)}
-.ven-img{height:190px;object-fit:cover;width:100%}
+.ven-img{height:190px;object-fit:cover;width:100%;display:block}
 .ven-body{background:#fff;padding:20px}
 .ven-tag{display:inline-block;background:#FF8F00;color:#fff;font-size:.68rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;padding:3px 10px;border-radius:4px;margin-bottom:10px}
 .ven-body h3{font-size:.96rem;font-weight:700;color:#1A3A6B;margin-bottom:8px}
@@ -105,6 +105,20 @@ section{padding:72px 0}
 .ven-sub{font-size:.74rem;color:#FF8F00;margin-top:6px;font-weight:600}
 .ven-dir{display:inline-flex;align-items:center;gap:6px;margin-top:12px;color:#1A3A6B;font-size:.8rem;font-weight:600}
 .ven-dir:hover{color:#FF8F00}
+.rv-section{background:#f5f8ff}
+.rv-summary{text-align:center;margin-bottom:32px}
+.rv-big{font-size:3.2rem;font-weight:800;color:#1A3A6B;line-height:1}
+.rv-bigstars{font-size:1.5rem;margin:6px 0 4px}
+.rv-cnt{font-size:.8rem;color:#888}
+.rv-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:20px}
+.rv-card{background:#fff;border-radius:12px;padding:20px;box-shadow:0 2px 10px rgba(26,58,107,.08);border:1px solid #e8eef8}
+.rv-head{display:flex;align-items:center;gap:12px;margin-bottom:10px}
+.rv-av{width:42px;height:42px;border-radius:50%;object-fit:cover;flex-shrink:0}
+.rv-av-def{width:42px;height:42px;border-radius:50%;background:#1A3A6B;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:1.1rem;flex-shrink:0}
+.rv-name{font-weight:600;font-size:.88rem;color:#1A3A6B}
+.rv-when{font-size:.72rem;color:#888}
+.rv-stars{font-size:1rem;margin-bottom:8px;letter-spacing:1px}
+.rv-text{font-size:.82rem;color:#444;line-height:1.6}
 .ps-section{position:relative;min-height:280px;display:flex;align-items:center;overflow:hidden}
 #ps{position:absolute;inset:-20%;width:140%;height:140%;background-image:url('https://images.unsplash.com/photo-1513258496099-48168024aec0?w=1600&q=85&fit=crop&auto=format');background-size:cover;background-position:center;will-change:transform;filter:brightness(.32)}
 .ps-inner{position:relative;z-index:2;text-align:center;padding:60px 20px;width:100%}
@@ -168,13 +182,19 @@ footer{background:#0f2347;color:#a8c0e8;padding:48px 0 24px}
   </div>
 </section>
 
+<section style="background:#f5f8ff;padding:40px 0">
+  <div class="container">
+    <p class="sec-label">Our Centre</p>
+    <h2 class="sec-h2" style="margin-bottom:20px">Sri Hayagreeva <span>Coaching Centre</span></h2>
+    <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=Ab43m-tOuzrugx4bknI0dq5R-SK0z-7GRJWKDXvwE4oppRZvO28qejMg97xrS7A-w7c-MJKbe0Z_Rgd4xWB8QcyErIhJnia1s3VpIGswfmgOvUA11AaTtblh8UwKda3r9jZLAWaLcas96Ec-q02lgruGsj7WX50deQ-s2TpjXGjVazXCo3_qPBKQweChiox9MANB3WVsPGwTs8DD2yGH8QcW-ysEXxJ9JlNQrNUAlspIw0jz4AP83TumVvuW_4Q-T3C0zMjQwDVDnpJ4icKp7X9Nbp9GsI5cd8mrFfp8ZDovaMjIjiLW0m1iLqaDMsvmPtfTUWjp6AZo5T-mU-1OdSjkhK7gu-cn4zHiClJ_J9fjWc_ku8CcpPl99Z5QUt6b3--iHSN32iojifebP5Cv3o5VQjfzu3htrB3NPJnNNE2Kg2z3Hg&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Sri Hayagreeva Coaching Centre" style="width:100%;max-height:440px;object-fit:cover;border-radius:14px;box-shadow:0 4px 24px rgba(26,58,107,.15)" loading="lazy">
+  </div>
+</section>
+
 <section id="results" style="background:#f5f8ff">
   <div class="container">
-    <div>
-      <p class="sec-label">Academic Excellence</p>
-      <h2 class="sec-h2">Our Students' <span>Results</span></h2>
-      <p class="sec-intro">Year after year, our students achieve outstanding marks. Click any card to view the score sheet.</p>
-    </div>
+    <p class="sec-label">Academic Excellence</p>
+    <h2 class="sec-h2">Our Students' <span>Results</span></h2>
+    <p class="sec-intro">Year after year, our students achieve outstanding marks. Click any card to view the score sheet.</p>
     <div class="rtabs">
       <button class="rtab active" onclick="showTab('maths',this)">Class XII – Mathematics</button>
       <button class="rtab" onclick="showTab('physics',this)">Class XII – Physics</button>
@@ -185,7 +205,7 @@ footer{background:#0f2347;color:#a8c0e8;padding:48px 0 24px}
       <a href="https://drive.google.com/file/d/1vNsmmX3Gg4Zpr9hKkf7xZY3qo0WOcEgc/view" target="_blank" class="rcard"><div class="r-yr">2026</div><div class="r-sub">Board Exam</div><span class="r-btn">View Results</span></a>
       <a href="https://drive.google.com/file/d/1wDMdtG6zm0-8zRk03vt3_KSIUfkGETKr/view" target="_blank" class="rcard"><div class="r-yr">2025</div><div class="r-sub">Mathematics</div><span class="r-btn">View Results</span></a>
       <a href="https://drive.google.com/file/d/1fNHmkFK8MGKTGADAq7QPtDdioVGYk3kR/view" target="_blank" class="rcard"><div class="r-yr">2024</div><div class="r-sub">Mathematics</div><span class="r-btn">View Results</span></a>
-      <a href="https://drive.google.com/file/d/1ml6_iyUfaKMooagbj_r1Ln4ulzpoD9LO/view" target="_blank" class="rcard"><div class="r-yr">2023</div><div class="r-sub">Mathematics</div><span class="r-btn">View Results</span></a>
+      <a href="https://drive.google.com/file/d/1ml6_iyUfaKMooagbj_r1Nl4ulzpoD9LO/view" target="_blank" class="rcard"><div class="r-yr">2023</div><div class="r-sub">Mathematics</div><span class="r-btn">View Results</span></a>
       <a href="https://drive.google.com/file/d/1a28sFbYALYeeMigWEJF6aiPGfyA-76Uh/view" target="_blank" class="rcard"><div class="r-yr">2022</div><div class="r-sub">Mathematics</div><span class="r-btn">View Results</span></a>
       <a href="https://drive.google.com/file/d/1SzSnlfmN3iSPDdhg1AUq91ADcyCt8aXL/view" target="_blank" class="rcard"><div class="r-yr">2020</div><div class="r-sub">Mathematics</div><span class="r-btn">View Results</span></a>
       <a href="https://drive.google.com/file/d/15ftf4q2vCKzNXnPaOGDWSRL-kRhH005A/view" target="_blank" class="rcard"><div class="r-yr">2019</div><div class="r-sub">Mathematics</div><span class="r-btn">View Results</span></a>
@@ -219,79 +239,48 @@ footer{background:#0f2347;color:#a8c0e8;padding:48px 0 24px}
     <h2 class="sec-h2">Batch <span>Schedule</span></h2>
     <p class="sec-intro">Choose a batch that fits your timetable. Limited seats — enrol early to secure your spot.</p>
     <div class="sched-grid">
-
       <div class="sc">
         <div class="sc-head"><h3>Class XI – Mathematics</h3><div class="ct">KK Nagar · Hari Om Vidyalaya</div></div>
         <div class="sc-body">
-          <div class="sc-row">
-            <div><span class="sc-code">HTTK11</span><div class="sc-days">Tuesday &amp; Thursday</div><div class="sc-start">From 09 June 2025</div></div>
-            <div class="sc-time">4:30–6:30 pm</div>
-          </div>
-          <div class="sc-row">
-            <div><span class="sc-code">HWSK11</span><div class="sc-days">Wednesday &amp; Saturday</div><div class="sc-start">From 10 June 2025</div></div>
-            <div class="sc-time">6:40–8:40 pm</div>
-          </div>
+          <div class="sc-row"><div><span class="sc-code">HTTK11</span><div class="sc-days">Tuesday &amp; Thursday</div><div class="sc-start">From 09 June 2025</div></div><div class="sc-time">4:30–6:30 pm</div></div>
+          <div class="sc-row"><div><span class="sc-code">HWSK11</span><div class="sc-days">Wednesday &amp; Saturday</div><div class="sc-start">From 10 June 2025</div></div><div class="sc-time">6:40–8:40 pm</div></div>
         </div>
       </div>
-
       <div class="sc">
         <div class="sc-head"><h3>Class XI – Mathematics</h3><div class="ct">Madanandapuram · EVP Santhosh Nagar</div></div>
         <div class="sc-body">
-          <div class="sc-row">
-            <div><span class="sc-code">HMFM11</span><div class="sc-days">Monday &amp; Friday</div><div class="sc-start">From 08 June 2025</div></div>
-            <div class="sc-time">4:30–6:30 pm</div>
-          </div>
+          <div class="sc-row"><div><span class="sc-code">HMFM11</span><div class="sc-days">Monday &amp; Friday</div><div class="sc-start">From 08 June 2025</div></div><div class="sc-time">4:30–6:30 pm</div></div>
         </div>
       </div>
-
       <div class="sc">
         <div class="sc-head"><h3>Class XI – Chemistry</h3><div class="ct">KK Nagar · Hari Om Vidyalaya</div></div>
         <div class="sc-body">
-          <div class="sc-row">
-            <div><div class="sc-days">Monday &amp; Friday</div><div class="sc-start">From 08 June 2025</div></div>
-            <div class="sc-time">4:30–6:30 pm</div>
-          </div>
+          <div class="sc-row"><div><div class="sc-days">Monday &amp; Friday</div><div class="sc-start">From 08 June 2025</div></div><div class="sc-time">4:30–6:30 pm</div></div>
         </div>
       </div>
-
       <div class="sc">
         <div class="sc-head"><h3>Class XI – Chemistry</h3><div class="ct">Madanandapuram · EVP Santhosh Nagar</div></div>
         <div class="sc-body">
-          <div class="sc-row">
-            <div><div class="sc-days">Wednesday &amp; Saturday</div><div class="sc-start">From 10 June 2025</div></div>
-            <div class="sc-time">4:30–6:30 pm</div>
-          </div>
+          <div class="sc-row"><div><div class="sc-days">Wednesday &amp; Saturday</div><div class="sc-start">From 10 June 2025</div></div><div class="sc-time">4:30–6:30 pm</div></div>
         </div>
       </div>
-
       <div class="sc">
         <div class="sc-head"><h3>Class XI – Physics</h3><div class="ct">Madanandapuram · EVP Santhosh Nagar</div></div>
         <div class="sc-body">
-          <div class="sc-row">
-            <div><div class="sc-days">Tuesday &amp; Thursday</div><div class="sc-start">From 09 June 2025</div></div>
-            <div class="sc-time">4:30–6:30 pm</div>
-          </div>
+          <div class="sc-row"><div><div class="sc-days">Tuesday &amp; Thursday</div><div class="sc-start">From 09 June 2025</div></div><div class="sc-time">4:30–6:30 pm</div></div>
         </div>
       </div>
-
       <div class="sc">
         <div class="sc-head"><h3>Class IX – Mathematics &amp; Science</h3><div class="ct">Madanandapuram · EVP Santhosh Nagar</div></div>
         <div class="sc-body">
-          <div class="sc-row">
-            <div><div class="sc-days" style="color:#FF8F00;font-weight:700">Science</div><div class="sc-days">Mon / Wed / Fri</div><div class="sc-start">From 08 June 2025</div></div>
-            <div class="sc-time">6:00–7:20 pm</div>
-          </div>
-          <div class="sc-row">
-            <div><div class="sc-days" style="color:#FF8F00;font-weight:700">Mathematics</div><div class="sc-days">Mon / Wed / Fri</div><div class="sc-start">From 08 June 2025</div></div>
-            <div class="sc-time">7:30–8:45 pm</div>
-          </div>
+          <div class="sc-row"><div><div class="sc-days" style="color:#FF8F00;font-weight:700">Science</div><div class="sc-days">Mon / Wed / Fri</div><div class="sc-start">From 08 June 2025</div></div><div class="sc-time">6:00–7:20 pm</div></div>
+          <div class="sc-row"><div><div class="sc-days" style="color:#FF8F00;font-weight:700">Mathematics</div><div class="sc-days">Mon / Wed / Fri</div><div class="sc-start">From 08 June 2025</div></div><div class="sc-time">7:30–8:45 pm</div></div>
         </div>
       </div>
-
     </div>
     <p style="margin-top:20px;font-size:.8rem;color:#555;background:#fff;padding:12px 16px;border-radius:8px;border-left:4px solid #FF8F00">
-      <strong>Download full schedule PDF:</strong>
-      <a href="https://drive.google.com/file/d/1zcY9Jl_GoQrbHYB6qsKoORODBsn1lq1j/view" target="_blank" style="color:#1A3A6B;font-weight:600;margin-left:6px">View Schedule ↗</a>
+      <strong>Download full schedule:</strong>
+      <a href="/schedule.pdf" target="_blank" style="color:#1A3A6B;font-weight:600;margin-left:6px">View Schedule PDF ↗</a>
     </p>
   </div>
 </section>
@@ -327,7 +316,7 @@ footer{background:#0f2347;color:#a8c0e8;padding:48px 0 24px}
         </tbody>
       </table>
     </div>
-    <p class="fee-note">* Admission Form fee: <strong>&#8377;150</strong> (one-time, non-refundable). Contact us for the latest fee structure and any concessions.</p>
+    <p class="fee-note">* Admission Form fee: <strong>&#8377;150</strong> (one-time, non-refundable). Contact us for the latest fee structure.</p>
   </div>
 </section>
 
@@ -392,18 +381,74 @@ footer{background:#0f2347;color:#a8c0e8;padding:48px 0 24px}
       <div class="adm-step"><div class="adm-num">4</div><h4>Pay &amp; Start</h4><p>Pay the course fee and attend your first class on the batch start date.</p></div>
     </div>
     <div class="adm-docs">
-      <a href="https://drive.google.com/file/d/12sgSYWbkkUB0t0VCFa_HDnEKBBOrPYkR/view" target="_blank" class="doc-btn">
+      <a href="/admission-form.pdf" target="_blank" class="doc-btn">
         <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 15h8v2H8zm0-4h8v2H8z"/></svg>
         Admission Form
       </a>
-      <a href="https://drive.google.com/file/d/1i8OeuZCyG5ow7FQS7cnXIE4-bZwgaoY-/view" target="_blank" class="doc-btn">
+      <a href="/joining-instructions.pdf" target="_blank" class="doc-btn">
         <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 15h8v2H8zm0-4h8v2H8z"/></svg>
         Joining Instructions
       </a>
-      <a href="https://drive.google.com/file/d/1zcY9Jl_GoQrbHYB6qsKoORODBsn1lq1j/view" target="_blank" class="doc-btn">
+      <a href="/schedule.pdf" target="_blank" class="doc-btn">
         <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 15h8v2H8zm0-4h8v2H8z"/></svg>
         Batch Schedule PDF
       </a>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="rv-section">
+  <div class="container">
+    <p class="sec-label">What Parents &amp; Students Say</p>
+    <h2 class="sec-h2">Google <span>Reviews</span></h2>
+    <div class="rv-summary"><div class="rv-big">4.9</div><div class="rv-bigstars"><span style="color:#FF8F00">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span style="color:#ddd"></span></div><div class="rv-cnt">86+ Google Reviews</div></div>
+    <div class="rv-grid">
+      
+      <div class="rv-card">
+        <div class="rv-head">
+          <img src="https://lh3.googleusercontent.com/a/ACg8ocJhwWwi6dfMsoNq6oGRP3It03zK4hT37fYoAdtlhNyxozclqYc=s128-c0x00000000-cc-rp-mo" alt="Pavan Parvesh" class="rv-av" loading="lazy"
+            onerror="this.outerHTML='<div class=rv-av-def>P</div>'">
+          <div><div class="rv-name">Pavan Parvesh</div><div class="rv-when">2 months ago</div></div>
+        </div>
+        <div class="rv-stars"><span style="color:#FF8F00">&#9733;&#9733;&#9733;&#9733;</span><span style="color:#ddd">&#9733;</span></div>
+        <p class="rv-text">I joined this maths tuition hoping to improve my understanding for my board exams. The teacher is knowledgeable and teaches many advanced problems and concepts, even beyond the NCERT syllabus, similar to JEE-level questions.<br><br>However, after writing the board exam, I realized that the exam paper was much easier and mostly based on standard NCERT-level concepts. Many of the advanced and difficult problems taught in the tuition did not really appear in the exam.<br><br>Because of this, I feel the tuition is more suitable for students preparing for competitive exams like JEE rather than average students who are mainly focusing on board exam preparation.<br><br>The teaching quality is good, but the level of questions and concepts may be more advanced than what most board-focused students actually need.</p>
+      </div>
+      <div class="rv-card">
+        <div class="rv-head">
+          <img src="https://lh3.googleusercontent.com/a/ACg8ocLhN_xvm0ca4vIfrRHM9C_uirkZgw5cQnjdVeOzA4BDplTPSak=s128-c0x00000000-cc-rp-mo" alt="Siddharth Srinivasan" class="rv-av" loading="lazy"
+            onerror="this.outerHTML='<div class=rv-av-def>S</div>'">
+          <div><div class="rv-name">Siddharth Srinivasan</div><div class="rv-when">2 months ago</div></div>
+        </div>
+        <div class="rv-stars"><span style="color:#FF8F00">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span style="color:#ddd"></span></div>
+        <p class="rv-text">Yadhav sir is an excellent mathematics teacher who covers all the required concepts well before exams. His method of teaching is amazing and the flexible hybrid online and offline batches are a great plus point. All types of sums are covered and sir encourages doubts. I enjoyed studying under sir's guidance for 11th and 12th. Thank you sir!</p>
+      </div>
+      <div class="rv-card">
+        <div class="rv-head">
+          <img src="https://lh3.googleusercontent.com/a-/ALV-UjUVhT9T17gTX6XG5pkugO-loslYDiFXLvVZwk8jmJPm6cb1_WO36w=s128-c0x00000000-cc-rp-mo" alt="Sai Sabareesh Manikantan" class="rv-av" loading="lazy"
+            onerror="this.outerHTML='<div class=rv-av-def>S</div>'">
+          <div><div class="rv-name">Sai Sabareesh Manikantan</div><div class="rv-when">2 months ago</div></div>
+        </div>
+        <div class="rv-stars"><span style="color:#FF8F00">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span style="color:#ddd"></span></div>
+        <p class="rv-text">I had a great experience learning Mathematics here with Yadav Sir for both my 11th and 12th grades. The variety of problems and different types of sums covered, along with the regular tests conducted by sir, made learning both challenging and enjoyable. It greatly improved my understanding of the subject and my confidence in solving problems. Truly grateful for the guidance.</p>
+      </div>
+      <div class="rv-card">
+        <div class="rv-head">
+          <img src="https://lh3.googleusercontent.com/a/ACg8ocK2EPqnwVX90pgDtA_5SR_5wSs4lyjtLIGmzbJVC0mVBeiSng=s128-c0x00000000-cc-rp-mo" alt="bharathi mani" class="rv-av" loading="lazy"
+            onerror="this.outerHTML='<div class=rv-av-def>b</div>'">
+          <div><div class="rv-name">bharathi mani</div><div class="rv-when">2 months ago</div></div>
+        </div>
+        <div class="rv-stars"><span style="color:#FF8F00">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span style="color:#ddd"></span></div>
+        <p class="rv-text">Before joining, I am afraid of maths and I don't have confidence. I joined when I am in 11th.<br><br>Initially I thought weekly 2 classes only.so easy.But later only I realised,his ( yadav sir) teaching method and he gives so much of homework is not enough to hope up with the whole week.<br>But my understanding and solving ability is improved. And the way I am looking for maths is also changed alot.<br>Now I finished my 12 th board but I never feel maths harder exam.<br>Now maths is easy for me.<br>Thank you so much sir.<br>U are a magical person, u gave me that much confidence. Thank you so much once again.<br>Any one feel like me, maths tough subject please join here to change your mindset.</p>
+      </div>
+      <div class="rv-card">
+        <div class="rv-head">
+          <img src="https://lh3.googleusercontent.com/a-/ALV-UjW5osbp2IQlq8XvMSyqc2MK_maXhR5_sb5AIfIqdNjSk07HbJl1=s128-c0x00000000-cc-rp-mo" alt="Nandana" class="rv-av" loading="lazy"
+            onerror="this.outerHTML='<div class=rv-av-def>N</div>'">
+          <div><div class="rv-name">Nandana</div><div class="rv-when">2 months ago</div></div>
+        </div>
+        <div class="rv-stars"><span style="color:#FF8F00">&#9733;&#9733;&#9733;&#9733;</span><span style="color:#ddd">&#9733;</span></div>
+        <p class="rv-text">as I'm studying in the math classes with Yadav sir actually he is the excellent teacher he uses to give a greater number of sums and we have practiced a lot. Thank u sir for your guidance sir. Board exam was easy sir. Thanks a lot sir</p>
+      </div>
     </div>
   </div>
 </section>
@@ -414,28 +459,28 @@ footer{background:#0f2347;color:#a8c0e8;padding:48px 0 24px}
     <h2 class="sec-h2">Visit Our <span>Centres</span></h2>
     <div class="ven-grid">
       <div class="ven-card">
-        <img src="https://maps.googleapis.com/maps/api/staticmap?center=Hari+Om+Vidyalaya,22nd+Street,5th+Sector,KK+Nagar,Chennai&zoom=16&size=600x200&maptype=roadmap&markers=color:red%7CHari+Om+Vidyalaya,22nd+Street,KK+Nagar,Chennai&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="KK Nagar Centre" class="ven-img" loading="lazy">
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center=13.040028,80.201083&zoom=17&size=600x200&maptype=roadmap&markers=color:red%7C13.040028,80.201083&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="KK Nagar Centre – Google Maps" class="ven-img" loading="lazy">
         <div class="ven-body">
           <span class="ven-tag">KK Nagar</span>
           <h3>Hari Om Vidyalaya</h3>
           <p class="ven-addr">No.14, 22nd Street, 5th Sector,<br>KK Nagar, Chennai</p>
           <p class="ven-sub">Classes: Mathematics &amp; Chemistry (Class XI)</p>
-          <a href="https://www.google.com/maps/search/Hari+Om+Vidyalaya+22nd+Street+5th+Sector+KK+Nagar+Chennai" target="_blank" rel="noopener" class="ven-dir">
+          <a href="https://www.google.com/maps?q=13.040028,80.201083" target="_blank" rel="noopener" class="ven-dir">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-            Get Directions
+            Open in Google Maps
           </a>
         </div>
       </div>
       <div class="ven-card">
-        <img src="https://maps.googleapis.com/maps/api/staticmap?center=84+Mahalingam+Street,EVP+Santhosh+Nagar,Madanandapuram,Chennai+600125&zoom=16&size=600x200&maptype=roadmap&markers=color:red%7C84+Mahalingam+Street,Madanandapuram,Chennai+600125&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Madanandapuram Centre" class="ven-img" loading="lazy">
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center=13.040028,80.201083&zoom=17&size=600x200&maptype=roadmap&markers=color:red%7C13.040028,80.201083&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Madanandapuram Centre – Google Maps" class="ven-img" loading="lazy">
         <div class="ven-body">
           <span class="ven-tag">Madanandapuram</span>
           <h3>EVP Santhosh Nagar</h3>
           <p class="ven-addr">No.84, Mahalingam Street,<br>EVP Santhosh Nagar,<br>Madanandapuram, Chennai – 600 125</p>
           <p class="ven-sub">Classes: Mathematics, Physics, Chemistry (XI) + Class IX Mathematics &amp; Science</p>
-          <a href="https://www.google.com/maps/search/84+Mahalingam+Street+EVP+Santhosh+Nagar+Madanandapuram+Chennai+600125" target="_blank" rel="noopener" class="ven-dir">
+          <a href="https://www.google.com/maps?q=13.040028,80.201083" target="_blank" rel="noopener" class="ven-dir">
             <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-            Get Directions
+            Open in Google Maps
           </a>
         </div>
       </div>
@@ -466,9 +511,9 @@ footer{background:#0f2347;color:#a8c0e8;padding:48px 0 24px}
       </div>
       <div class="ft-col">
         <h4>Documents</h4>
-        <a href="https://drive.google.com/file/d/12sgSYWbkkUB0t0VCFa_HDnEKBBOrPYkR/view" target="_blank">Admission Form</a><br>
-        <a href="https://drive.google.com/file/d/1i8OeuZCyG5ow7FQS7cnXIE4-bZwgaoY-/view" target="_blank">Joining Instructions</a><br>
-        <a href="https://drive.google.com/file/d/1zcY9Jl_GoQrbHYB6qsKoORODBsn1lq1j/view" target="_blank">Batch Schedule PDF</a>
+        <a href="/admission-form.pdf" target="_blank">Admission Form</a><br>
+        <a href="/joining-instructions.pdf" target="_blank">Joining Instructions</a><br>
+        <a href="/schedule.pdf" target="_blank">Batch Schedule PDF</a>
       </div>
     </div>
     <div class="ft-bottom">&#169; 2025 Sri Hayagreeva Coaching Centre, Chennai. All rights reserved.</div>
