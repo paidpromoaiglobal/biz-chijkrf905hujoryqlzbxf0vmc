@@ -133,13 +133,7 @@ footer{background:#0f2347;color:#a8c0e8;padding:48px 0 24px}
 .wa-float{position:fixed;bottom:22px;right:22px;z-index:200;background:#25D366;color:#fff;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 16px rgba(37,211,102,.4);transition:.2s}
 .wa-float:hover{transform:scale(1.08)}
 .wa-float svg{width:28px;height:28px;fill:#fff}
-@media(max-width:640px){
-  .nav-links{display:none}
-  .hero-content{margin:0;padding:60px 20px 40px}
-  .hero-stats{gap:20px}
-  .hs-num{font-size:1.6rem}
-  .rpanel.active{grid-template-columns:repeat(2,1fr)}
-}
+@media(max-width:640px){.nav-links{display:none}.hero-content{margin:0;padding:60px 20px 40px}.hero-stats{gap:20px}.hs-num{font-size:1.6rem}.rpanel.active{grid-template-columns:repeat(2,1fr)}}
 </style>
 </head>
 <body>
@@ -186,7 +180,7 @@ footer{background:#0f2347;color:#a8c0e8;padding:48px 0 24px}
   <div class="container">
     <p class="sec-label">Our Centre</p>
     <h2 class="sec-h2" style="margin-bottom:20px">Sri Hayagreeva <span>Coaching Centre</span></h2>
-    <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=Ab43m-urKvJxUwht-uaqobCTkQfnYlorBUKMNGPCCqzi-Xj1T-wG91im6NuVUrYgjnV_Bwni4ikRweby--KnQmd800OqIXfWl1elcE4PCZbyFN-JMsQ0WbPkrofT3BoUG8N1LrHmJ13E9u60_bUhGKHxyTOv8nhetZ1Ks-r_PhxgVobI69QvXc1v6_R7xxALqQO_uE32UCz8o6B6_mqA6ItRFfGw-8HlSgJaiS0paRjX9mO7qKONfwvMJKDHnXOqb0K90aLFgY1T85gAkexKfONedny7MLB48NxZeyrpNlXwjfzxHYS3aSuzjluD8Ev7hWNj0U6LHkgNrG8zSgVBrJeJyjfqo_0mmdjb0UxSnwh8RYFjnQRYbwWmpqWXri859Kb9pYUXms3vk_GgKyEuy-YPk27Cbae25cXyfB9WfNY4NuocWg&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Sri Hayagreeva Coaching Centre" style="width:100%;max-height:440px;object-fit:cover;border-radius:14px;box-shadow:0 4px 24px rgba(26,58,107,.15)" loading="lazy">
+    <img src="https://maps.googleapis.com/maps/api/place/photo?maxwidth=1200&photo_reference=Ab43m-v6xAzGbf4ZQIDVCU35FmOvmIHFo5d2A2nUujnF_iXn7mCYQjUqhYaTsUEWwZ6Aug1nMSvmuuKJjWJZJUfJAMysW-zLU4UNLU2TVkpMwIbOJlComUZV8M37RzaE3SS54tEgt-W_cp1cSpd_flYkkmTzsivjenhCbXY_jkGMkA9FgscJS79v6GARolBa3VJBO9u04_ss_54_nBWfjGSlZQJuj_QVZT_fKmGlw_MNcx5Qv8qvsfB94Dk5d9_gblMGjhmrqReD3b5k4zE4qiyX94JcH-jrGHXtPmZ0gFLnEJ4vcSlpFvOWpA4j4IzALb46A1kt9caiqaMgA__hBNcyKWULb0jznXxm3yghQXh049WI7OzmPgqELK2WD5huxGm7ecwQ256JgRaF9ucX8XOlwZUGtFwKe7X-IXwro5RdDr35sw&key=AIzaSyC_ivUff6pQaag6HCBj5_PO3mk1G6kCKKs" alt="Sri Hayagreeva Coaching Centre" style="width:100%;max-height:440px;object-fit:cover;border-radius:14px;box-shadow:0 4px 24px rgba(26,58,107,.15)" loading="lazy">
   </div>
 </section>
 
@@ -194,7 +188,7 @@ footer{background:#0f2347;color:#a8c0e8;padding:48px 0 24px}
   <div class="container">
     <p class="sec-label">Academic Excellence</p>
     <h2 class="sec-h2">Our Students' <span>Results</span></h2>
-    <p class="sec-intro">Year after year, our students achieve outstanding marks. Click any card to view the score sheet.</p>
+    <p class="sec-intro">Year after year, our students achieve outstanding marks. Click any card to open the result sheet.</p>
     <div class="rtabs">
       <button class="rtab active" onclick="showTab('maths',this)">Class XII – Mathematics</button>
       <button class="rtab" onclick="showTab('physics',this)">Class XII – Physics</button>
@@ -202,33 +196,34 @@ footer{background:#0f2347;color:#a8c0e8;padding:48px 0 24px}
       <button class="rtab" onclick="showTab('tenth',this)">Class X</button>
     </div>
     <div id="tab-maths" class="rpanel active">
-      <a href="https://drive.google.com/file/d/1vNsmmX3Gg4Zpr9hKkf7xZY3qo0WOcEgc/view" target="_blank" class="rcard"><div class="r-yr">2026</div><div class="r-sub">Board Exam</div><span class="r-btn">View Results</span></a>
-      <a href="https://drive.google.com/file/d/1wDMdtG6zm0-8zRk03vt3_KSIUfkGETKr/view" target="_blank" class="rcard"><div class="r-yr">2025</div><div class="r-sub">Mathematics</div><span class="r-btn">View Results</span></a>
-      <a href="https://drive.google.com/file/d/1fNHmkFK8MGKTGADAq7QPtDdioVGYk3kR/view" target="_blank" class="rcard"><div class="r-yr">2024</div><div class="r-sub">Mathematics</div><span class="r-btn">View Results</span></a>
-      <a href="https://drive.google.com/file/d/1ml6_iyUfaKMooagbj_r1Nl4ulzpoD9LO/view" target="_blank" class="rcard"><div class="r-yr">2023</div><div class="r-sub">Mathematics</div><span class="r-btn">View Results</span></a>
-      <a href="https://drive.google.com/file/d/1a28sFbYALYeeMigWEJF6aiPGfyA-76Uh/view" target="_blank" class="rcard"><div class="r-yr">2022</div><div class="r-sub">Mathematics</div><span class="r-btn">View Results</span></a>
-      <a href="https://drive.google.com/file/d/1SzSnlfmN3iSPDdhg1AUq91ADcyCt8aXL/view" target="_blank" class="rcard"><div class="r-yr">2020</div><div class="r-sub">Mathematics</div><span class="r-btn">View Results</span></a>
-      <a href="https://drive.google.com/file/d/15ftf4q2vCKzNXnPaOGDWSRL-kRhH005A/view" target="_blank" class="rcard"><div class="r-yr">2019</div><div class="r-sub">Mathematics</div><span class="r-btn">View Results</span></a>
+      <a href="/results/maths-2026-board.pdf" target="_blank" class="rcard"><div class="r-yr">2026</div><div class="r-sub">Board Exam</div><span class="r-btn">View Results</span></a>
+      <a href="/results/maths-2025.pdf" target="_blank" class="rcard"><div class="r-yr">2025</div><div class="r-sub">Mathematics</div><span class="r-btn">View Results</span></a>
+      <a href="/results/maths-2024.pdf" target="_blank" class="rcard"><div class="r-yr">2024</div><div class="r-sub">Mathematics</div><span class="r-btn">View Results</span></a>
+      <a href="/results/maths-2023.pdf" target="_blank" class="rcard"><div class="r-yr">2023</div><div class="r-sub">Mathematics</div><span class="r-btn">View Results</span></a>
+      <a href="/results/maths-2022.pdf" target="_blank" class="rcard"><div class="r-yr">2022</div><div class="r-sub">Mathematics</div><span class="r-btn">View Results</span></a>
+      <a href="/results/maths-2020.pdf" target="_blank" class="rcard"><div class="r-yr">2020</div><div class="r-sub">Mathematics</div><span class="r-btn">View Results</span></a>
+      <a href="/results/maths-2019.pdf" target="_blank" class="rcard"><div class="r-yr">2019</div><div class="r-sub">Mathematics</div><span class="r-btn">View Results</span></a>
     </div>
     <div id="tab-physics" class="rpanel">
-      <a href="https://drive.google.com/file/d/13Ctmh-XzwJtG2Cg0yLFD7341dHVq7fGI/view" target="_blank" class="rcard"><div class="r-yr">2025</div><div class="r-sub">Physics</div><span class="r-btn">View Results</span></a>
-      <a href="https://drive.google.com/file/d/1Iwk6qkwmcHdjlXuFZ3rTb_hxUD6-Ci2M/view" target="_blank" class="rcard"><div class="r-yr">2024</div><div class="r-sub">Physics</div><span class="r-btn">View Results</span></a>
-      <a href="https://drive.google.com/file/d/1GbGqvKGYaFpNat8WDxJ3d6aE1aP7ydXw/view" target="_blank" class="rcard"><div class="r-yr">2023</div><div class="r-sub">Physics</div><span class="r-btn">View Results</span></a>
+      <a href="/results/physics-2025.pdf" target="_blank" class="rcard"><div class="r-yr">2025</div><div class="r-sub">Physics</div><span class="r-btn">View Results</span></a>
+      <a href="/results/physics-2024.pdf" target="_blank" class="rcard"><div class="r-yr">2024</div><div class="r-sub">Physics</div><span class="r-btn">View Results</span></a>
+      <a href="/results/physics-2023.pdf" target="_blank" class="rcard"><div class="r-yr">2023</div><div class="r-sub">Physics</div><span class="r-btn">View Results</span></a>
     </div>
     <div id="tab-chem" class="rpanel">
-      <a href="https://drive.google.com/file/d/145un3PKGRZvke8RufLl_P1DjwvWFX2oe/view" target="_blank" class="rcard"><div class="r-yr">2026</div><div class="r-sub">Board Exam</div><span class="r-btn">View Results</span></a>
-      <a href="https://drive.google.com/file/d/1p-XFDU96K3qtNPB-0cIEZYdaIplUFhKR/view" target="_blank" class="rcard"><div class="r-yr">2025</div><div class="r-sub">Chemistry</div><span class="r-btn">View Results</span></a>
-      <a href="https://drive.google.com/file/d/1l9eBM38rLbkk_73izGtLZ7i5ctKhatfl/view" target="_blank" class="rcard"><div class="r-yr">2024</div><div class="r-sub">Chemistry</div><span class="r-btn">View Results</span></a>
-      <a href="https://drive.google.com/file/d/1IphuIXhlIlvrmDpSU5wrEYn-jC0wdLGH/view" target="_blank" class="rcard"><div class="r-yr">2023</div><div class="r-sub">Chemistry</div><span class="r-btn">View Results</span></a>
-      <a href="https://drive.google.com/file/d/1hl8XwAbc8_8Y5MPumCv68ZuLKCY-t3Ok/view" target="_blank" class="rcard"><div class="r-yr">2022</div><div class="r-sub">Chemistry</div><span class="r-btn">View Results</span></a>
-      <a href="https://drive.google.com/file/d/1ZGe2lWZvQAgLiMpJkNmLc2wIAj9ulMku/view" target="_blank" class="rcard"><div class="r-yr">2020</div><div class="r-sub">Chemistry</div><span class="r-btn">View Results</span></a>
-      <a href="https://drive.google.com/file/d/1JGTFKYj7BvA-KjqLV0z5SRqOmJds1YQf/view" target="_blank" class="rcard"><div class="r-yr">2019</div><div class="r-sub">Chemistry</div><span class="r-btn">View Results</span></a>
+      <a href="/results/chem-2026-board.pdf" target="_blank" class="rcard"><div class="r-yr">2026</div><div class="r-sub">Board Exam</div><span class="r-btn">View Results</span></a>
+      <a href="/results/chem-2025.pdf" target="_blank" class="rcard"><div class="r-yr">2025</div><div class="r-sub">Chemistry</div><span class="r-btn">View Results</span></a>
+      <a href="/results/chem-2024.pdf" target="_blank" class="rcard"><div class="r-yr">2024</div><div class="r-sub">Chemistry</div><span class="r-btn">View Results</span></a>
+      <a href="/results/chem-2023.pdf" target="_blank" class="rcard"><div class="r-yr">2023</div><div class="r-sub">Chemistry</div><span class="r-btn">View Results</span></a>
+      <a href="/results/chem-2022.pdf" target="_blank" class="rcard"><div class="r-yr">2022</div><div class="r-sub">Chemistry</div><span class="r-btn">View Results</span></a>
+      <a href="/results/chem-2020.pdf" target="_blank" class="rcard"><div class="r-yr">2020</div><div class="r-sub">Chemistry</div><span class="r-btn">View Results</span></a>
+      <a href="/results/chem-2019.pdf" target="_blank" class="rcard"><div class="r-yr">2019</div><div class="r-sub">Chemistry</div><span class="r-btn">View Results</span></a>
     </div>
     <div id="tab-tenth" class="rpanel">
-      <a href="https://drive.google.com/file/d/1808Sd8esDqpb68GRmCc98LzlcNC-nUYB/view" target="_blank" class="rcard"><div class="r-yr">2025</div><div class="r-sub">Science</div><span class="r-btn">View Results</span></a>
-      <a href="https://drive.google.com/file/d/1G6gAEzdREP0gnCeASfNj9dW0zdAvwHDU/view" target="_blank" class="rcard"><div class="r-yr">2024-25</div><div class="r-sub">Mathematics</div><span class="r-btn">View Results</span></a>
-      <a href="https://drive.google.com/file/d/1rnl1rtV2gj79PN3CEDRG6oKC08Z45DWT/view" target="_blank" class="rcard"><div class="r-yr">2023-24</div><div class="r-sub">Science</div><span class="r-btn">View Results</span></a>
-      <a href="https://drive.google.com/file/d/1nGe8vwwbPRsi21fWb8EdWYL_1zio7Xtp/view" target="_blank" class="rcard"><div class="r-yr">2022-23</div><div class="r-sub">Mathematics</div><span class="r-btn">View Results</span></a>
+      <a href="#" target="_blank" class="rcard" style="opacity:.5;pointer-events:none"><div class="r-yr">2025-26</div><div class="r-sub">Mathematics</div><span class="r-btn">Coming Soon</span></a>
+      <a href="/results/x-sci-2025.pdf" target="_blank" class="rcard"><div class="r-yr">2025</div><div class="r-sub">Science</div><span class="r-btn">View Results</span></a>
+      <a href="/results/x-maths-2024-25.pdf" target="_blank" class="rcard"><div class="r-yr">2024-25</div><div class="r-sub">Mathematics</div><span class="r-btn">View Results</span></a>
+      <a href="/results/x-sci-2023-24.pdf" target="_blank" class="rcard"><div class="r-yr">2023-24</div><div class="r-sub">Science</div><span class="r-btn">View Results</span></a>
+      <a href="/results/x-maths-2022-23.pdf" target="_blank" class="rcard"><div class="r-yr">2022-23</div><div class="r-sub">Mathematics</div><span class="r-btn">View Results</span></a>
     </div>
   </div>
 </section>
@@ -239,44 +234,12 @@ footer{background:#0f2347;color:#a8c0e8;padding:48px 0 24px}
     <h2 class="sec-h2">Batch <span>Schedule</span></h2>
     <p class="sec-intro">Choose a batch that fits your timetable. Limited seats — enrol early to secure your spot.</p>
     <div class="sched-grid">
-      <div class="sc">
-        <div class="sc-head"><h3>Class XI – Mathematics</h3><div class="ct">KK Nagar · Hari Om Vidyalaya</div></div>
-        <div class="sc-body">
-          <div class="sc-row"><div><span class="sc-code">HTTK11</span><div class="sc-days">Tuesday &amp; Thursday</div><div class="sc-start">From 09 June 2025</div></div><div class="sc-time">4:30–6:30 pm</div></div>
-          <div class="sc-row"><div><span class="sc-code">HWSK11</span><div class="sc-days">Wednesday &amp; Saturday</div><div class="sc-start">From 10 June 2025</div></div><div class="sc-time">6:40–8:40 pm</div></div>
-        </div>
-      </div>
-      <div class="sc">
-        <div class="sc-head"><h3>Class XI – Mathematics</h3><div class="ct">Madanandapuram · EVP Santhosh Nagar</div></div>
-        <div class="sc-body">
-          <div class="sc-row"><div><span class="sc-code">HMFM11</span><div class="sc-days">Monday &amp; Friday</div><div class="sc-start">From 08 June 2025</div></div><div class="sc-time">4:30–6:30 pm</div></div>
-        </div>
-      </div>
-      <div class="sc">
-        <div class="sc-head"><h3>Class XI – Chemistry</h3><div class="ct">KK Nagar · Hari Om Vidyalaya</div></div>
-        <div class="sc-body">
-          <div class="sc-row"><div><div class="sc-days">Monday &amp; Friday</div><div class="sc-start">From 08 June 2025</div></div><div class="sc-time">4:30–6:30 pm</div></div>
-        </div>
-      </div>
-      <div class="sc">
-        <div class="sc-head"><h3>Class XI – Chemistry</h3><div class="ct">Madanandapuram · EVP Santhosh Nagar</div></div>
-        <div class="sc-body">
-          <div class="sc-row"><div><div class="sc-days">Wednesday &amp; Saturday</div><div class="sc-start">From 10 June 2025</div></div><div class="sc-time">4:30–6:30 pm</div></div>
-        </div>
-      </div>
-      <div class="sc">
-        <div class="sc-head"><h3>Class XI – Physics</h3><div class="ct">Madanandapuram · EVP Santhosh Nagar</div></div>
-        <div class="sc-body">
-          <div class="sc-row"><div><div class="sc-days">Tuesday &amp; Thursday</div><div class="sc-start">From 09 June 2025</div></div><div class="sc-time">4:30–6:30 pm</div></div>
-        </div>
-      </div>
-      <div class="sc">
-        <div class="sc-head"><h3>Class IX – Mathematics &amp; Science</h3><div class="ct">Madanandapuram · EVP Santhosh Nagar</div></div>
-        <div class="sc-body">
-          <div class="sc-row"><div><div class="sc-days" style="color:#FF8F00;font-weight:700">Science</div><div class="sc-days">Mon / Wed / Fri</div><div class="sc-start">From 08 June 2025</div></div><div class="sc-time">6:00–7:20 pm</div></div>
-          <div class="sc-row"><div><div class="sc-days" style="color:#FF8F00;font-weight:700">Mathematics</div><div class="sc-days">Mon / Wed / Fri</div><div class="sc-start">From 08 June 2025</div></div><div class="sc-time">7:30–8:45 pm</div></div>
-        </div>
-      </div>
+      <div class="sc"><div class="sc-head"><h3>Class XI – Mathematics</h3><div class="ct">KK Nagar · Hari Om Vidyalaya</div></div><div class="sc-body"><div class="sc-row"><div><span class="sc-code">HTTK11</span><div class="sc-days">Tuesday &amp; Thursday</div><div class="sc-start">From 09 June 2025</div></div><div class="sc-time">4:30–6:30 pm</div></div><div class="sc-row"><div><span class="sc-code">HWSK11</span><div class="sc-days">Wednesday &amp; Saturday</div><div class="sc-start">From 10 June 2025</div></div><div class="sc-time">6:40–8:40 pm</div></div></div></div>
+      <div class="sc"><div class="sc-head"><h3>Class XI – Mathematics</h3><div class="ct">Madanandapuram · EVP Santhosh Nagar</div></div><div class="sc-body"><div class="sc-row"><div><span class="sc-code">HMFM11</span><div class="sc-days">Monday &amp; Friday</div><div class="sc-start">From 08 June 2025</div></div><div class="sc-time">4:30–6:30 pm</div></div></div></div>
+      <div class="sc"><div class="sc-head"><h3>Class XI – Chemistry</h3><div class="ct">KK Nagar · Hari Om Vidyalaya</div></div><div class="sc-body"><div class="sc-row"><div><div class="sc-days">Monday &amp; Friday</div><div class="sc-start">From 08 June 2025</div></div><div class="sc-time">4:30–6:30 pm</div></div></div></div>
+      <div class="sc"><div class="sc-head"><h3>Class XI – Chemistry</h3><div class="ct">Madanandapuram · EVP Santhosh Nagar</div></div><div class="sc-body"><div class="sc-row"><div><div class="sc-days">Wednesday &amp; Saturday</div><div class="sc-start">From 10 June 2025</div></div><div class="sc-time">4:30–6:30 pm</div></div></div></div>
+      <div class="sc"><div class="sc-head"><h3>Class XI – Physics</h3><div class="ct">Madanandapuram · EVP Santhosh Nagar</div></div><div class="sc-body"><div class="sc-row"><div><div class="sc-days">Tuesday &amp; Thursday</div><div class="sc-start">From 09 June 2025</div></div><div class="sc-time">4:30–6:30 pm</div></div></div></div>
+      <div class="sc"><div class="sc-head"><h3>Class IX – Mathematics &amp; Science</h3><div class="ct">Madanandapuram · EVP Santhosh Nagar</div></div><div class="sc-body"><div class="sc-row"><div><div class="sc-days" style="color:#FF8F00;font-weight:700">Science</div><div class="sc-days">Mon / Wed / Fri</div><div class="sc-start">From 08 June 2025</div></div><div class="sc-time">6:00–7:20 pm</div></div><div class="sc-row"><div><div class="sc-days" style="color:#FF8F00;font-weight:700">Mathematics</div><div class="sc-days">Mon / Wed / Fri</div><div class="sc-start">From 08 June 2025</div></div><div class="sc-time">7:30–8:45 pm</div></div></div></div>
     </div>
     <p style="margin-top:20px;font-size:.8rem;color:#555;background:#fff;padding:12px 16px;border-radius:8px;border-left:4px solid #FF8F00">
       <strong>Download full schedule:</strong>
@@ -285,14 +248,7 @@ footer{background:#0f2347;color:#a8c0e8;padding:48px 0 24px}
   </div>
 </section>
 
-<div class="ps-section">
-  <div id="ps"></div>
-  <div class="ps-inner">
-    <h2>"Education is the most powerful weapon<br>you can use to change the world."</h2>
-    <p>Join hundreds of students who have achieved their academic goals with Sri Hayagreeva Coaching Centre.</p>
-    <a href="https://wa.me/918056057435" class="btn-primary" target="_blank" rel="noopener">Reserve Your Seat Today</a>
-  </div>
-</div>
+<div class="ps-section"><div id="ps"></div><div class="ps-inner"><h2>"Education is the most powerful weapon<br>you can use to change the world."</h2><p>Join hundreds of students who have achieved their academic goals with Sri Hayagreeva Coaching Centre.</p><a href="https://wa.me/918056057435" class="btn-primary" target="_blank" rel="noopener">Reserve Your Seat Today</a></div></div>
 
 <section id="fees" style="background:#fff">
   <div class="container">
@@ -326,45 +282,11 @@ footer{background:#0f2347;color:#a8c0e8;padding:48px 0 24px}
     <h2 class="sec-h2">Our <span>Faculty</span></h2>
     <p class="sec-intro">Experienced teachers with a proven track record of guiding students to top board results.</p>
     <div class="tcards">
-      <div class="tcard">
-        <div class="t-av">JY</div>
-        <div class="t-name">J.P. Yadhavakumar</div>
-        <div class="t-sub">Mathematics – XI &amp; XII</div>
-        <div class="t-deg">M.Sc. Mathematics, B.Ed.<br>15+ Years Experience</div>
-        <div class="t-ph">
-          <a href="tel:+918056057435">+91 80560 57435</a>
-          <a href="tel:+919884440017">+91 98844 40017</a>
-          <a href="tel:+918778172790">+91 87781 72790</a>
-        </div>
-      </div>
-      <div class="tcard">
-        <div class="t-av">VG</div>
-        <div class="t-name">Viswaganesh</div>
-        <div class="t-sub">Chemistry – XI &amp; XII</div>
-        <div class="t-deg">M.Sc. Chemistry, B.Ed.</div>
-        <div class="t-ph"><a href="tel:+919600980606">+91 96009 80606</a></div>
-      </div>
-      <div class="tcard">
-        <div class="t-av">SG</div>
-        <div class="t-name">Sugaraj</div>
-        <div class="t-sub">Physics – XI &amp; XII</div>
-        <div class="t-deg">M.Sc. Physics, B.Ed.</div>
-        <div class="t-ph"><a href="tel:+919940186016">+91 99401 86016</a></div>
-      </div>
-      <div class="tcard">
-        <div class="t-av">PV</div>
-        <div class="t-name">Parvatham</div>
-        <div class="t-sub">Mathematics – Class IX &amp; X</div>
-        <div class="t-deg">M.Sc. Mathematics, B.Ed.</div>
-        <div class="t-ph"><a href="tel:+919884440016">+91 98844 40016</a></div>
-      </div>
-      <div class="tcard">
-        <div class="t-av">SR</div>
-        <div class="t-name">Sriratha</div>
-        <div class="t-sub">Science – Class IX &amp; X</div>
-        <div class="t-deg">M.Sc. Zoology, B.Ed.</div>
-        <div class="t-ph"><a href="tel:+919043848703">+91 90438 48703</a></div>
-      </div>
+      <div class="tcard"><div class="t-av">JY</div><div class="t-name">J.P. Yadhavakumar</div><div class="t-sub">Mathematics – XI &amp; XII</div><div class="t-deg">M.Sc. Mathematics, B.Ed.<br>15+ Years Experience</div><div class="t-ph"><a href="tel:+918056057435">+91 80560 57435</a><a href="tel:+919884440017">+91 98844 40017</a><a href="tel:+918778172790">+91 87781 72790</a></div></div>
+      <div class="tcard"><div class="t-av">VG</div><div class="t-name">Viswaganesh</div><div class="t-sub">Chemistry – XI &amp; XII</div><div class="t-deg">M.Sc. Chemistry, B.Ed.</div><div class="t-ph"><a href="tel:+919600980606">+91 96009 80606</a></div></div>
+      <div class="tcard"><div class="t-av">SG</div><div class="t-name">Sugaraj</div><div class="t-sub">Physics – XI &amp; XII</div><div class="t-deg">M.Sc. Physics, B.Ed.</div><div class="t-ph"><a href="tel:+919940186016">+91 99401 86016</a></div></div>
+      <div class="tcard"><div class="t-av">PV</div><div class="t-name">Parvatham</div><div class="t-sub">Mathematics – Class IX &amp; X</div><div class="t-deg">M.Sc. Mathematics, B.Ed.</div><div class="t-ph"><a href="tel:+919884440016">+91 98844 40016</a></div></div>
+      <div class="tcard"><div class="t-av">SR</div><div class="t-name">Sriratha</div><div class="t-sub">Science – Class IX &amp; X</div><div class="t-deg">M.Sc. Zoology, B.Ed.</div><div class="t-ph"><a href="tel:+919043848703">+91 90438 48703</a></div></div>
     </div>
   </div>
 </section>
@@ -381,18 +303,9 @@ footer{background:#0f2347;color:#a8c0e8;padding:48px 0 24px}
       <div class="adm-step"><div class="adm-num">4</div><h4>Pay &amp; Start</h4><p>Pay the course fee and attend your first class on the batch start date.</p></div>
     </div>
     <div class="adm-docs">
-      <a href="/admission-form.pdf" target="_blank" class="doc-btn">
-        <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 15h8v2H8zm0-4h8v2H8z"/></svg>
-        Admission Form
-      </a>
-      <a href="/joining-instructions.pdf" target="_blank" class="doc-btn">
-        <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 15h8v2H8zm0-4h8v2H8z"/></svg>
-        Joining Instructions
-      </a>
-      <a href="/schedule.pdf" target="_blank" class="doc-btn">
-        <svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 15h8v2H8zm0-4h8v2H8z"/></svg>
-        Batch Schedule PDF
-      </a>
+      <a href="/admission-form.pdf" target="_blank" class="doc-btn"><svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 15h8v2H8zm0-4h8v2H8z"/></svg>Admission Form</a>
+      <a href="/joining-instructions.pdf" target="_blank" class="doc-btn"><svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 15h8v2H8zm0-4h8v2H8z"/></svg>Joining Instructions</a>
+      <a href="/schedule.pdf" target="_blank" class="doc-btn"><svg viewBox="0 0 24 24"><path d="M14 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V8l-6-6zm4 18H6V4h7v5h5v11zM8 15h8v2H8zm0-4h8v2H8z"/></svg>Batch Schedule PDF</a>
     </div>
   </div>
 </section>
@@ -403,7 +316,6 @@ footer{background:#0f2347;color:#a8c0e8;padding:48px 0 24px}
     <h2 class="sec-h2">Google <span>Reviews</span></h2>
     <div class="rv-summary"><div class="rv-big">4.9</div><div class="rv-bigstars"><span style="color:#FF8F00">&#9733;&#9733;&#9733;&#9733;&#9733;</span><span style="color:#ddd"></span></div><div class="rv-cnt">86+ Google Reviews</div></div>
     <div class="rv-grid">
-      
       <div class="rv-card">
         <div class="rv-head">
           <img src="https://lh3.googleusercontent.com/a/ACg8ocJhwWwi6dfMsoNq6oGRP3It03zK4hT37fYoAdtlhNyxozclqYc=s128-c0x00000000-cc-rp-mo" alt="Pavan Parvesh" class="rv-av" loading="lazy"
@@ -448,8 +360,7 @@ footer{background:#0f2347;color:#a8c0e8;padding:48px 0 24px}
         </div>
         <div class="rv-stars"><span style="color:#FF8F00">&#9733;&#9733;&#9733;&#9733;</span><span style="color:#ddd">&#9733;</span></div>
         <p class="rv-text">as I'm studying in the math classes with Yadav sir actually he is the excellent teacher he uses to give a greater number of sums and we have practiced a lot. Thank u sir for your guidance sir. Board exam was easy sir. Thanks a lot sir</p>
-      </div>
-    </div>
+      </div></div>
   </div>
 </section>
 
@@ -460,29 +371,11 @@ footer{background:#0f2347;color:#a8c0e8;padding:48px 0 24px}
     <div class="ven-grid">
       <div class="ven-card">
         <img src="https://images.unsplash.com/photo-1580582932707-520aed937b7b?w=600&q=85&fit=crop&auto=format" alt="KK Nagar Centre" class="ven-img" loading="lazy">
-        <div class="ven-body">
-          <span class="ven-tag">KK Nagar</span>
-          <h3>Hari Om Vidyalaya</h3>
-          <p class="ven-addr">No.14, 22nd Street, 5th Sector,<br>KK Nagar, Chennai</p>
-          <p class="ven-sub">Classes: Mathematics &amp; Chemistry (Class XI)</p>
-          <a href="https://www.google.com/maps?q=13.040028,80.201083" target="_blank" rel="noopener" class="ven-dir">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-            Open in Google Maps
-          </a>
-        </div>
+        <div class="ven-body"><span class="ven-tag">KK Nagar</span><h3>Hari Om Vidyalaya</h3><p class="ven-addr">No.14, 22nd Street, 5th Sector,<br>KK Nagar, Chennai</p><p class="ven-sub">Classes: Mathematics &amp; Chemistry (Class XI)</p><a href="https://www.google.com/maps?q=13.040028,80.201083" target="_blank" rel="noopener" class="ven-dir"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Open in Google Maps</a></div>
       </div>
       <div class="ven-card">
         <img src="https://images.unsplash.com/photo-1562774053-701939374585?w=600&q=85&fit=crop&auto=format" alt="Madanandapuram Centre" class="ven-img" loading="lazy">
-        <div class="ven-body">
-          <span class="ven-tag">Madanandapuram</span>
-          <h3>EVP Santhosh Nagar</h3>
-          <p class="ven-addr">No.84, Mahalingam Street,<br>EVP Santhosh Nagar,<br>Madanandapuram, Chennai – 600 125</p>
-          <p class="ven-sub">Classes: Mathematics, Physics, Chemistry (XI) + Class IX Mathematics &amp; Science</p>
-          <a href="https://www.google.com/maps?q=13.040028,80.201083" target="_blank" rel="noopener" class="ven-dir">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
-            Open in Google Maps
-          </a>
-        </div>
+        <div class="ven-body"><span class="ven-tag">Madanandapuram</span><h3>EVP Santhosh Nagar</h3><p class="ven-addr">No.84, Mahalingam Street,<br>EVP Santhosh Nagar,<br>Madanandapuram, Chennai – 600 125</p><p class="ven-sub">Classes: Mathematics, Physics, Chemistry (XI) + Class IX Mathematics &amp; Science</p><a href="https://www.google.com/maps?q=13.040028,80.201083" target="_blank" rel="noopener" class="ven-dir"><svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>Open in Google Maps</a></div>
       </div>
     </div>
   </div>
@@ -491,30 +384,10 @@ footer{background:#0f2347;color:#a8c0e8;padding:48px 0 24px}
 <footer>
   <div class="container">
     <div class="ft-grid">
-      <div class="ft-col">
-        <h4>Sri Hayagreeva Coaching Centre</h4>
-        <p>Expert coaching in Mathematics, Physics &amp; Chemistry for Classes IX–XII. Two convenient centres in Chennai.</p>
-      </div>
-      <div class="ft-col">
-        <h4>Quick Links</h4>
-        <a href="#results">Results</a><br>
-        <a href="#schedule">Batch Schedule</a><br>
-        <a href="#fees">Fees</a><br>
-        <a href="#teachers">Faculty</a><br>
-        <a href="#admission">Admission</a>
-      </div>
-      <div class="ft-col">
-        <h4>Contact</h4>
-        <a href="tel:+918056057435">+91 80560 57435</a><br>
-        <a href="tel:+919884440017">+91 98844 40017</a><br>
-        <a href="https://wa.me/918056057435" target="_blank" rel="noopener">WhatsApp Enquiry</a>
-      </div>
-      <div class="ft-col">
-        <h4>Documents</h4>
-        <a href="/admission-form.pdf" target="_blank">Admission Form</a><br>
-        <a href="/joining-instructions.pdf" target="_blank">Joining Instructions</a><br>
-        <a href="/schedule.pdf" target="_blank">Batch Schedule PDF</a>
-      </div>
+      <div class="ft-col"><h4>Sri Hayagreeva Coaching Centre</h4><p>Expert coaching in Mathematics, Physics &amp; Chemistry for Classes IX–XII. Two convenient centres in Chennai.</p></div>
+      <div class="ft-col"><h4>Quick Links</h4><a href="#results">Results</a><br><a href="#schedule">Batch Schedule</a><br><a href="#fees">Fees</a><br><a href="#teachers">Faculty</a><br><a href="#admission">Admission</a></div>
+      <div class="ft-col"><h4>Contact</h4><a href="tel:+918056057435">+91 80560 57435</a><br><a href="tel:+919884440017">+91 98844 40017</a><br><a href="https://wa.me/918056057435" target="_blank" rel="noopener">WhatsApp Enquiry</a></div>
+      <div class="ft-col"><h4>Documents</h4><a href="/admission-form.pdf" target="_blank">Admission Form</a><br><a href="/joining-instructions.pdf" target="_blank">Joining Instructions</a><br><a href="/schedule.pdf" target="_blank">Batch Schedule PDF</a></div>
     </div>
     <div class="ft-bottom">&#169; 2025 Sri Hayagreeva Coaching Centre, Chennai. All rights reserved.</div>
   </div>
@@ -525,21 +398,8 @@ footer{background:#0f2347;color:#a8c0e8;padding:48px 0 24px}
 </a>
 
 <script>
-function showTab(id,el){
-  document.querySelectorAll('.rpanel').forEach(function(p){p.classList.remove('active');});
-  document.querySelectorAll('.rtab').forEach(function(t){t.classList.remove('active');});
-  document.getElementById('tab-'+id).classList.add('active');
-  el.classList.add('active');
-}
-(function(){
-  var hb=document.getElementById('heroBg'),ps=document.getElementById('ps');
-  function onScroll(){
-    var s=window.pageYOffset;
-    if(hb)hb.style.transform='translateY('+s*0.3+'px)';
-    if(ps){var r=ps.parentElement.getBoundingClientRect();if(r.top<window.innerHeight&&r.bottom>0){ps.style.transform='translateY('+(-50+((window.innerHeight-r.top)/(window.innerHeight+r.height))*100*0.3)+'px)';}}
-  }
-  window.addEventListener('scroll',onScroll,{passive:true});
-})();
+function showTab(id,el){document.querySelectorAll('.rpanel').forEach(function(p){p.classList.remove('active');});document.querySelectorAll('.rtab').forEach(function(t){t.classList.remove('active');});document.getElementById('tab-'+id).classList.add('active');el.classList.add('active');}
+(function(){var hb=document.getElementById('heroBg'),ps=document.getElementById('ps');function onScroll(){var s=window.pageYOffset;if(hb)hb.style.transform='translateY('+s*0.3+'px)';if(ps){var r=ps.parentElement.getBoundingClientRect();if(r.top<window.innerHeight&&r.bottom>0){ps.style.transform='translateY('+(-50+((window.innerHeight-r.top)/(window.innerHeight+r.height))*100*0.3)+'px)';}}}window.addEventListener('scroll',onScroll,{passive:true});})();
 </script>
 </body>
 </html>
